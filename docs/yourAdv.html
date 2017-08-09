@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Adventure!</title>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Google Places API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc4n7YcIoj-vkkSJ1SVO4_MWvBJ4ECtaI&libraries=places"></script>
+
+    <!-- Local favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Averia+Serif+Libre|Sriracha|Delius|Lateef" rel="stylesheet">
+    
+    <!-- Booklet JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script> window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>') </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="booklet/jquery.easing.1.3.js"></script>
+    <script src="booklet/jquery.booklet.latest.min.js"></script>
+    <link href="booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+
+    <!-- Local CSS -->
+    <link href="siteStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="page-top" class="body2">
+    <!-- Cookies Test -->
+    <section id="bookPage" class="book-section ">
+        
+        <div class="container vtest">
+            <div class="book_wrapper">
+             
+
+                <div class="row">
+
+
+                    <div id="mybook">
+                        <div class="b-load">
+                            <div>
+                                <div class="googlePhotoBG tape one media-object image_Error img"></div>
+                               
+                                <!-- <img class="js-bitmoji-stamp media-object col-sm-4 image_Error bookLandingMoji" style="height:350px; width:350px; margin-top:-25px;" alt="Book Bitmoji" />  -->
+                                <h3 class="toDoHeader">To Do List:</h3>  
+                                <ul>
+                                    <li><p>See things that are related to <span class="js-activity"></span></p></li>
+                                    <li><p>Explore all the things nearby!</p></li>
+                                </ul>          
+
+                            </div>
+                            <div class="newPage">
+                                <img style="position:absolute; left:-20px; top:-17px; height:200px; width:30px;" src="/images/ribbon.png" />
+                                <h2 class="media-heading js-name landingText" style="margin-top:35px; margin-bottom:0px;"></h2>
+                                <div class="goesto">
+                                    <img src="/images/arrowgoes.png" />
+                                </div>
+                                <h2 class="media-heading js-location landingText" style="margin-top:0px; margin-bottom:15px;"></h2>
+                               
+                                <a id="custom-add-end" class="btn btn-success btn-lg custom-next" style="margin-left:135px;">Let's Go!</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          
+            
+        </div>
+        <a id="resetbtn" class="btn btn-danger btn-lg" href="yourInput.html" onclick="clearCookies();" ><small>Reset</small> <span id="startBook" class="glyphicon glyphicon-off "></span></a>
+    </section>
+    <div id="service-helper2"></div>
+
+    <!-- Local jQuery Functions -->
+    <script src="adventureTime.js"></script>
+    <script src="advBook.js"></script>
+    
+</body>
+</html>
