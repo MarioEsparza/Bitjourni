@@ -1,0 +1,589 @@
+﻿body {
+     width: 100%;
+    height: 100%;
+    
+
+}
+.body2{
+    
+     background:url(../images/Book_Background.jpg) top left no-repeat; 
+     /*background-attachment:fixed;*/
+}
+html {
+  
+    width: 100%;
+    height: 100%;
+}
+/*This gives the navbar an animation that slowly changes it's size when scrolled down*/
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/*Nav Bar CSS*/
+
+.navbar{
+      background-color:#fff;
+       font-family: 'Roboto Slab', serif;
+}
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #3cb878;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.nav-logo{
+    margin-top:-5px;
+    height:36px;
+    width:150px;
+}
+/*Nav Bar CSS End*/
+
+
+@media (min-width:767px) {
+    h1{
+        font-size: 64px;
+    }
+
+
+}
+
+
+@media (max-width:767px) {
+    h1{
+        font-size: 34px;
+    }
+
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    color:#fff;
+    text-align:center;
+     text-shadow: 1px 1px 1px #000;
+}
+.lead{
+    margin-bottom:5px;
+     font-family: 'Ubuntu', sans-serif;
+      text-shadow: 1px 1px 1px #000;
+     
+}
+input { 
+    font-family: 'Muli', cursive;
+     font-weight:500;
+}
+
+.charbtn{
+    background:#3cb878;
+  
+}
+
+.success-green{
+    color:#3cb878;
+}
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+
+.who-section {
+    height: 100%;
+    text-align: center;
+    background-image:  url("/images/Who_Background.jpg"); 
+    background-size: cover;
+    color:#fff;
+    overflow-x:hidden ;
+}
+.nametag{
+    background: url("/images/nametag.png") no-repeat; 
+    margin:auto;
+    height:230px;
+    width:396px;
+}
+
+@media (max-width:767px) {
+   .nametag{
+   background: url("/images/nametag.png") no-repeat; 
+   background-size:cover;
+    height:174px;
+    width:300px;
+}
+}
+.nameBox{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.avatar-section {
+    height: 100%;
+    text-align: center;
+    background:  url("/images/Avatar_Background.jpg")top left; 
+    background-size: cover;
+    overflow-x:hidden ;
+    color:#fff;
+}
+
+.avatarHeader{
+    margin-top:10px;
+    margin-bottom:0px;
+}
+#bitmojiLogo {
+    margin-left: 6px;
+}
+ #avatarImage{
+  margin:auto;
+
+
+    }
+
+
+
+@media (max-height:320px) {
+   #avatarImage{
+    height:99px;
+    width:100px;
+
+
+    }
+   #bitmojiLogo{
+    height:29px;
+    width:100px;
+    }
+    .avatarcardBG {
+    background: url("/images/guesscardBGsm.png") no-repeat; 
+    height:150px;
+    width:209px;
+    }
+}
+
+.avatarcardBG{
+    background: url("/images/guesscardBG.png") no-repeat; 
+    margin:auto;
+    height:558px;
+    width:400px
+}
+@media (max-width:767px) {
+   .avatarcardBG{
+   background: url("/images/guesscardBG.png"); 
+   background-size:cover;
+    height:220px;
+    width:158px;
+    }
+}
+.avatarBox{
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.dice{
+     font-family: 'Ubuntu', sans-serif;
+    font-size:14px;
+}
+.userBitmoji{
+    margin-top:5px;
+    padding-bottom:10px;
+    background:linear-gradient(rgba(247, 204, 3, 0.9), rgba(247, 204, 3, 0.9));
+}
+#avatarNextbtn{
+    margin-top: 20px;
+}
+.btn-success{
+    background-color:#3cb878;
+}
+.where-section {
+    height: 100%;
+    text-align: center;
+    background: #e46558;
+    background-image:  url("/images/Where_Background.jpg"); 
+    background-size: cover;
+    overflow-x:hidden ;
+    color:#fff;
+}
+#locationInput{
+  
+}
+#whereNextbtn{
+    margin-top: 50px;
+}
+
+.what-section {
+    height: 100%;
+    text-align: center;
+    background: #8bbee0;
+    background-size: cover;
+    color:#fff;
+    overflow-x:hidden ;
+
+}
+
+#startbtn{
+    margin-top: 5px;
+}
+#startBitmoji{
+   margin:auto;
+    height: 300px;
+    width: 300px;
+}
+
+@media (max-width:767px) {
+    #startBitmoji {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.book{
+    color:#fff;
+     text-align: center;
+}
+/*Makes sure the content inside the container is always vertically alligned */
+.vtest {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Book CSS*/
+
+#resetbtn {
+    position: fixed;
+    bottom: 15px;
+    right: 48%; 
+}
+
+.book-section {
+    height: 100%;
+    padding-top:150px;
+
+}
+
+.book_wrapper{
+	margin:0 auto;
+    margin-top:50px;
+	padding-top:50px;
+	width:900px;
+	height:600px;
+	background:transparent url(/images/bg.png) no-repeat 10px 27px;
+    background-position-x:-8px;
+
+    background-size:100% auto;
+}
+.booklet           {
+    
+	position:relative;
+	margin:0 auto 10px;
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	background: url(../images/left_bg.jpg) no-repeat top left;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+.booklet .b-wrap-right {
+	background: url(../images/right_bg.jpg) no-repeat top left;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.booklet .b-counter {
+    font-family: 'Averia Serif Libre', cursive;
+	bottom:10px;
+	margin-bottom:10px;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#000;
+	text-align:center;
+	font-size:16px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 1px #fff;
+	opacity:0.8;
+}
+
+.book_wrapper h1{
+    font-family: 'Sriracha', cursive;
+	margin:25px 25px 25px 15px;
+	font-size:28px;
+	background:transparent url(../images/h1.png) no-repeat bottom left;
+	padding-bottom:7px;
+    text-shadow: none;
+    color:#223882;
+}
+.book_wrapper p{
+	font-size:16px;
+	font-family: 'Delius', cursive;
+    text-shadow: none;
+    color:#404545;
+}
+
+.book_wrapper .pageLabel{
+	font-size:16px;
+	font-family: 'Averia Serif Libre', cursive;
+    text-shadow: none;
+    color:#252626;
+}
+.book_wrapper .pageDetails{
+	font-size:16px;
+	font-family: 'Delius', cursive;
+    text-shadow: none;
+    color:#404545;
+}
+
+.book_wrapper .landingText{
+    font-family: 'Bungee Shade', cursive;
+	font-size:48px;
+    text-shadow: none;
+    color:#000;
+    text-align:center;
+}
+.book_wrapper .toDoHeader{
+    font-family: 'Sriracha', cursive;
+	font-size:24px;
+    text-shadow: none;
+    color:#11a2c9;
+    text-align:center;
+}
+.book_wrapper p{
+	font-size:16px;
+	margin:5px 8px 5px 15px;
+}
+.book_wrapper a.article,
+.book_wrapper a.demo{
+	background:transparent url(../images/circle.png) no-repeat 50% 0px;
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover,
+.book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+.book_wrapper img{
+	margin:10px 0px 5px 35px;
+	width:300px;
+	padding:4px;
+    /*
+	border:1px solid #ddd;
+	-moz-box-shadow:1px 1px 1px #fff;
+	-webkit-box-shadow:1px 1px 1px #fff;
+	box-shadow:1px 1px 1px #fff;
+        */
+}
+.booklet .b-wrap-right img{
+	border:none;
+}
+
+/*Book images CSS*/
+.bookLandingMoji{
+          -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.tape {
+position: relative;
+text-align: center;
+display: inline-block; *display: inline; zoom: 1;
+
+}
+.one:before{
+content: "";
+display: block;
+width: 80px;
+height: 20px;
+position: relative;
+top: -12px;
+margin: auto;
+background: rgba(249, 242, 236, 0.6);
+-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+
+.tape {
+display: inline-block; *display: inline; zoom: 1;
+margin: 0;
+padding: 0;
+background: #fff;
+vertical-align:top;
+-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+
+
+.two:before, .two:after  {
+content: "";
+display: block;
+width: 60px;
+height: 15px;
+position: relative;
+top: -12px;
+margin: auto;
+background: rgba(252, 252, 233, 0.8);
+-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+.two:before, .two:after {
+position: absolute;
+top: 2px;
+}
+.two:before {
+left: -10px;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+.two:after {
+top: inherit;
+bottom: 10px;
+right: -10px;
+-webkit-transform: rotate(-35deg);
+-moz-transform: rotate(-35deg);
+transform: rotate(-35deg);
+}
+
+.photoBG{
+     margin-top:15px;
+     margin-left:15px;
+     border: 6px solid #fff;
+    background: transparent url('book_Placeholder.png') no-repeat top center; 
+}
+
+/*Rotates Picture*/
+.picRotato1{
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+.picRotato2{
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.googlePhotoBG{
+   height:200px;
+   width: 375px;
+    background: transparent url('book_Placeholder.png') no-repeat top center; 
+    background-size:auto;
+    border: 7px solid #ddd;
+    margin-left:15px;
+     margin-top:35px;
+      -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+
+}
+
+#custom-add-end{
+    margin-top:10px;
+    margin-left:75px;
+   
+    }
+#random-add-end{
+    margin-top:10px;
+    margin-left:10px;
+   
+}
+
+/* .modal-fullscreen */
+.modal-body{
+    color:#fff;
+}
+.modal-footer{
+    text-align:center;
+}
+.modal-btn{
+    text-align:center;
+}
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #3cb878;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}

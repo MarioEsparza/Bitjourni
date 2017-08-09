@@ -1,0 +1,306 @@
+﻿* {
+            margin: 0;
+            padding: 0;
+        }
+
+body, html{
+      width: 100%;
+      height: 100%;
+      color: #271616;
+  }
+
+
+  /*Nav Bar CSS*/
+.navbar{
+     font-family: 'Roboto Slab', serif;
+     font-size:14px;
+      background-color:#fff;
+}
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #3cb878;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.nav-logo{
+    margin-top:-5px;
+    height:36px;
+    width:150px;
+}
+/*This gives the navbar an animation that slowly changes it's size when scrolled down*/
+@media(min-width:767px) {
+    .navbar {       
+         padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+       
+    }
+}
+
+/*Nav Bar CSS End*/
+
+
+.btn-default{
+    background-color:#d9d6d6;
+}
+
+.margin {margin-bottom: 25px;}
+.margincenter {
+    margin-top:40px;
+    margin-bottom: 45px;
+    margin-left:25px;
+    text-align:center;
+    
+}
+.marginimg{
+     margin:auto;
+     width:400px;
+     height:400px;
+     align-content:center;
+    
+}
+
+.content{
+    margin:auto;
+}
+
+.marginbutton{
+    padding:0;
+     margin:auto;
+}
+
+.desc {
+    margin-top:20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*Sections sizes and backgrounds*/
+
+.home-section {
+    height: 100%;
+    background-image:linear-gradient(rgba(63, 160, 228, 0.8), rgba(43, 116, 167, 0.8)), url("/images/Index_Background.jpg");    
+    background-size:cover;
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Ubuntu', sans-serif;
+   }
+
+#indexstartbtn{
+    margin-top:10px;
+    text-shadow:none;
+    font-family: 'Roboto Slab', serif;
+    background-color:#fff;
+    color:#000;
+    -moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+}
+
+ul{
+    list-style:none;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    color:#fff;
+    text-align:center;
+     text-shadow: 1px 1px 1px #000;
+     margin:auto;
+     margin-bottom:20px;
+}
+
+@media (min-width:767px) {
+    h1{
+        font-size: 64px;
+    }
+
+
+}
+
+
+@media (max-width:767px) {
+    h1{
+        font-size: 38px;
+    }
+
+
+}
+.lead li{
+    margin-bottom:5px;
+     
+    
+      text-shadow: 1px 1px 1px #000;
+     
+}
+#displayexample{
+    margin:auto;
+}
+@media (max-width:767px) {
+ #displayexample{
+    width:300px;
+    height:203px;
+    }
+
+}
+.pageBG{
+
+    /*background: url("/images/bg.png") no-repeat; */
+    margin:auto;
+    height:300px;
+    width:450px;
+     background-size:cover;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+h3{
+    text-align:center;
+     font-family: 'Roboto Slab', serif;
+ 
+}
+
+p{
+    font-size:16px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.about-section {
+    height: 100%;
+     background-image:linear-gradient(rgba(241, 196, 15, 0.8), rgba(241, 196, 15, 0.8)), url("/images/About_Background.jpg");    
+
+    background-size:cover;
+    background-color:#f1c40f;
+     
+}
+.aboutBox{
+    background-color:#fff;
+   border-radius:5px;
+    background: rgba(255, 255, 255, 0.3);
+    padding:25px;
+    margin-top:0px;
+   
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.contactText{
+
+    color:#636161;
+}
+.container-fluid {
+      padding-top: 50px;
+      padding-bottom:50px;
+  }
+ 
+
+
+
+
+
+
+/*Makes sure the content inside the container is always vertically alligned */
+.vtest {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*Logo*/
+.logo{
+    width:50px;
+    height:50px;
+    margin-bottom:10px;
+    
+}
+
+
+/*Animation Text*/
+.textanimation{
+  
+    -webkit-animation-duration:1s;
+    -webkit-animation-iteration-count:1;
+
+}
+
+.texteffect{
+    text-shadow: 4px 3px 0px #fff, 8px 7px 0px rgba(0,0,0,0.10);
+    text-emphasis-style:filled;
+    font-family:'Times New Roman', Times, serif, 'Arial';
+    font-weight: 200,bold;
+    width:100%;
+    height:20%;
+    color:black;
+  }
+
+@media(max-width:767px) {
+     
+    .logo{
+    width:24px;
+    height:24px;
+  }
+  
+.texteffect{
+   font-size:large;
+
+    
+  }
+.marginimg{
+     width:200px;
+     height:200px;
+    
+}
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 12px;
+        
+
+    }
+
+    .ol carousel-indicators{
+      
+}
+
+
+}
+
+@media (max-width:767px) {
+    h1{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media (max-width:767px) {
+    p{
+        font-size: 13px;
+    }
+}
+
+

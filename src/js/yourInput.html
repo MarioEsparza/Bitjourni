@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Build your Journey!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu|Muli|Delius" rel="stylesheet">
+
+    <!-- Local favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Local CSS -->
+    <link href="siteStyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span><img class="nav-logo" src="images/nav_bar_logo.jpg"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                    <!-- Hidden list: This links to the different section and their id-->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a href="#who">Who</a>
+                    </li>
+                    <li>
+                        <a href="#avatar">Avatar</a>
+                    </li>
+                    <li>
+                        <a href="#where">Where</a>
+                    </li>
+                    <li>
+                        <a href="#what">What</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+    </nav>
+   
+    <!--Who? -->
+    <section id="who" class="who-section ">
+
+        <!-- All content is placed inside a container -->
+        <div class="container vtest "> <!-- Note: vtest vertically aligns the content-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Who</h1>
+                    <p class="lead">Who's the main character of this adventure?</p>
+                    <div class="nametag">
+                        <div class="input-group input-group-md col-xs-8 nameBox">
+                            <input type="text" class="form-control" id="nameInput" placeholder="Enter Name" />
+                            <span class="input-group-btn ">
+                                <a id="whoNextbtn" class="btn btn-default" href="#avatar" type="button"><span id="validCheck1" class="glyphicon glyphicon-ok " aria-hidden="true"></span></a>
+                            </span>
+
+
+                        </div>
+                    </div>
+                      
+                 </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Avatar -->
+    <section id="avatar" class="avatar-section">
+        <div class="container vtest">
+            <div class="row">
+                <h1>Choose Your   <span><img id="bitmojiLogo" src=" images/bitmojiLogoWhit.png" alt="Bitmoji Logo"></span></h1>
+                <p class="lead hidden-xs">Roll the dice, or enter your own!</p>
+
+                <div class="avatarcardBG">
+                    <div class="col-sm-12 avatarBox">
+                        <img id="avatarImage" class="img-responsive  js-bitmoji media-object image_Error" alt=" random bitmoji" />
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="btn btn-success image_Error dice btn-lg" onclick="randomBitmoji(); return false;">
+                        Random  <img src="/images/randomDice.png" width="25" />
+                    </button>
+                </div>
+                    <div class="col-sm-offset-2 col-sm-8 userBitmoji">
+                        <p class="lead" style="color: #000; text-shadow: none;">Use your own Bitmoji.</p>
+                        <div class="input-group input-group-md col-sm-offset-3 col-sm-6">
+                            <input type="text" class="form-control" id="bitMojiID2" placeholder="Enter your Bitmoji URL!" />
+                            <!-- Button modal fullscreen -->
+
+                            <span class="input-group-addon ">
+                                <a href="#" data-toggle="modal" data-target="#modal-fullscreen">Help</a>
+                            </span>
+
+                            <span class="input-group-btn ">
+                                <a id="bitBtn2" class="btn btn-default" href="#avatar" type="button"><span id="validCheckAvatar" class="glyphicon glyphicon-ok " aria-hidden="true"></span></a>
+                            </span>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            <div class="row">
+                <a id="avatarNextbtn" class="btn btn-success btn-lg" href="#where">Next</a>
+            </div>
+        </div>
+        <div class="container vtest">
+            </div>
+</section>
+
+    <!-- Where? -->
+    <section id="where" class="where-section" >
+        <div class="container vtest">
+            <div class="row">
+                <div class="col-sm-12 text-center v-center">
+                    <h1>Where</h1>
+                    <p class="lead">Where do you want to explore?</p>
+
+                    <br>
+
+                    <div class="input-group input-group-md col-sm-offset-2 col-sm-8">
+                        <input type="text" class="form-control" id="locationInput" value="" placeholder="Enter a city, park, neighborhood etc." />
+                        
+
+                        <span class="input-group-btn ">
+                            <a id="whereCheckbtn" class="btn btn-default" href="#where" type="button" onclick="findPlace(); return false;"><span id="validCheck2" class="glyphicon glyphicon-ok " aria-hidden="true"></span></a>
+                        </span>
+
+         
+                    </div>
+
+                </div>
+
+                <div class="row">                
+                    <br />
+                    <a id="whereNextbtn" class="btn btn-success btn-lg" href="#what" type="button">Next</a>
+                </div>
+
+            </div>  
+        </div>
+    </section>
+
+    <!-- What? -->
+    <section id="what" class="what-section">
+        <div class="container vtest">
+            <div class="row">
+                <div class="col-sm-12 text-center v-center">
+                    <h1>What</h1>
+                    <p class="lead">What would you like to explore in <span class="js-location">here?</span>?</p>
+
+                    <br>
+
+                    <div class="input-group input-group-md col-sm-offset-2 col-sm-8">
+                        <input type="text" class="form-control" id="activityInput" value="" placeholder="Examples: Landmarks, bars, or parks. The choice is yours!" />
+
+                        <span class="input-group-btn ">
+                            <a id="whatCheckbtn" class="btn btn-default" href="#" type="button" onclick="findWhat(); return false;"><span id="validCheck3" class="glyphicon glyphicon-ok " aria-hidden="true"></span></a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" id="startbtn">
+                <br />
+                <img id="startBitmoji" class="js-bitmoji-start media-object image_Error" alt="Start Bitmoji" />
+                <a class="btn btn-success btn-lg" href="yourAdv.html" type="button">Create Bitjourni <span id="startBook" class="glyphicon glyphicon-book "></span></a>
+                <small class="contactText"> <br />Feedback & Contact @ marioesparza818@gmail.com</small>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Bitmoji ID Help Modal -->
+    <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h1 class="modal-title" id="myModalLabel">How to add your own Bitmoji</h1>
+                    
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <ul>
+                                    <li><h3>Open the Bitmoji App on Chrome or on your mobile device.</h3></li>
+                                    <li><h3>Select any Bitmoji image, right click it, and click "copy image address".</h3></li>
+                                    <li><h3>Or you can drag the image into a browser window and copy the URL from the browser.</h3></li>
+                                    <li><h3>Paste the Bitmoji URL into our Bitmoji Avatar extractor tool. You're done!</h3></li>
+                                </ul> 
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 modal-btn">
+
+                                    <small>Don't have a bitmoji yet? <br /></small>
+                                    <a href="https://play.google.com/store/apps/details?id=com.bitstrips.imoji&amp;referrer=utm_source%3Dbitmoji%26utm_medium%3Dlanding" target="_blank" id="play-store"><img class="" src="images/chrome-badge.cache.png"></a>
+
+                                </div>
+                            </div>
+
+                       
+                </div>
+                        <div class="col-sm-6 hidden-xs">
+                            <img id="howto" class="img-responsive" src=" images/howto.png" alt="Bitmoji Tutorial">
+                        </div>
+                    
+
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+    <div id="service-helper"></div>
+    <!-- Local jQuery Functions -->
+    <!-- Refresh page on back button click -->
+    <script>
+        $(window).bind("pageshow", function (event) {
+           
+            clearCookies();
+            if (event.originalEvent.persisted) {
+                window.location.reload()
+            }
+
+            $("#avatarNextbtn").fadeIn("slow");
+        });
+       
+    </script>
+    <script src="adventureTime.js"></script>
+    <!-- Google Places API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc4n7YcIoj-vkkSJ1SVO4_MWvBJ4ECtaI&libraries=places&callback=initMap" async defer></script>
+
+
+</body>
+</html>
