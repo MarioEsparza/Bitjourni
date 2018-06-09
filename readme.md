@@ -3,11 +3,6 @@
 
 # Bitjourni: Dynamic Travel Journal that places your Bitmoji anywhere in the world! — [Bitjourni.net](http://www.bitjourni.net/)
 
-
-
-
-## WIP - Currently re-writing and updating Bitjourni.
-
 ## Bitjourni is a web application that combines user input with Bitmoji and web APIs to create a dynamic storytelling experience.
 
 ![](https://s9.postimg.org/l5d7nqjgf/bitjourni_how_esparza_git_banner.jpg)
